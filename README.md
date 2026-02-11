@@ -1,7 +1,7 @@
 # BERT_Fine_Tuning
 Fine-tuned Google’s BERT base uncased model on the NYT dataset with an A100 GPU on Colab for training to categorize news articles into 3 imbalanced classes (business, sports, and politics) with a validation f1 score of 98%. Also implemented Word2Vec, GloVe, and other vector embedding algorithms.
 
-# Summary of results / Reflection
+# Summary of results 
 
 I had initially started off by splitting the data into the training, validation and test sets without stratification, but then the macro f1 scores in Q1 seemed off. That's when it occurred to me that the dataset might be imbalanced. Upon verifying this, I stratified the splits to get significant representations from each class. 
 
